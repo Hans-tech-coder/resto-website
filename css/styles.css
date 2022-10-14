@@ -51,7 +51,7 @@ body {
   margin-top: 10px;
 }
 #nav-list a {
-  color: #951349;
+  color: #951c49;
   text-align: center;
 }
 #nav-list a:hover {
@@ -82,12 +82,20 @@ body {
   clear: both;
   margin-top: -30px;
 }
-
 /* END HEADER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3f0c1f;
+  border: 2pc solid #3f0c1f;
+}
 
 /*********** Large device only **********/
 @media (min-width: 1200px) {
-
+  .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
 }
 
 /*********** Medium device only **********/
@@ -100,11 +108,26 @@ body {
     margin: 5px 5px 5px 0;
   }
   /* End Header */
-}
+
+  /* Home Page */
+  .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
+}/* End Home Page */
 
 /*********** Small device only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+  /* Home Page */
+  .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
+  /* End Home Page */
 }
 
 /*********** Extra device only **********/
@@ -133,5 +156,29 @@ body {
   #collabsable-nav a span {
     font-size: .6em;
     margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-decoration: uppercase;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+    box-shadow: 2px solid #3f0c1f;
   }
 }
