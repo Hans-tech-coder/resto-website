@@ -125,4 +125,13 @@ body {
   .navbar-brand p img { /* Star-K */
     height: 20px;
   }
+
+  #collabsable-nav a { /* Collapsed nav menu bx */
+    font-size: 1.2em;
+  }
+
+  #collabsable-nav a span {
+    font-size: .6em;
+    margin-right: 5px;
+  }
 }
