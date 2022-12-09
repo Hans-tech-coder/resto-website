@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
-<body>
+<body ng-app="restaurant" ng-strict-di>
   <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
@@ -43,11 +43,11 @@
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
             <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuCategories();">
+              <a ui-sref="public.menu">
                 <span class="bx bxs-food-menu bx-lg bx-tada-hover"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
-              <a href="about.html">
+              <a href="#">
                 <span class="bx bxs-info-square bx-lg bx-tada-hover"></span><br class="hidden-xs"> About</a>
             </li>
             <li>
@@ -66,13 +66,19 @@
 
   <div id="call-btn" class="visible-xs">
     <a class="btn" href="tel:410-602-5008">
-    <span class="glyphicon glyphicon-earphone"></span>
+    <span class="bx bxs-phone-call bx-lg bx-tada-hover"></span>
     410-602-5008
     </a>
   </div>
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
-  <div id="main-content" class="container"></div>
+  <ui-view>
+    <div class="text-center initial-loading">
+      <h2>Loading Site...</h2>
+    </div>
+  </ui-view>
+
+  <!-- <div id="main-content" class="container"></div> -->
 
   <footer class="panel-footer">
     <div class="container">
@@ -100,10 +106,24 @@
     </div>
   </footer>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
-  <script src="js/script.js"></script>
+  <!-- Libs -->
+  <script src="lib/jquery-2.1.4.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <!-- <script src="js/ajax-utils.js"></script> -->
+  <!-- <script src="js/script.js"></script> -->
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+
+  <!-- Main Restaurant Module -->
+  <script src="src/restaurant.module.js"></script>
+
+  <!-- Public Module -->
+  <script src="src/public/public.module.js"></script>
+  <script src="src/public/public.routes.js"></script>
+
+  <!-- ADMIN SITE -->
+
+  <!--Application files -->
+
 </body>
 </html>
