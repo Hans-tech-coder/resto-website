@@ -43,11 +43,11 @@
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
+            <li id="navHomeButton" class="visible-xs">
               <a href="index.html">
-                <span class="glyphicon glyphicon-home"></span> Home</a>
+                <span class="bx bxs-home-alt-2 bx-lg bx-tada-hover"></span> Home</a>
             </li>
-            <li id="navMenuButton">
+            <li id="navMenuButton" ui-sref-active="active">
               <a ui-sref="public.menu">
                 <span class="bx bxs-food-menu bx-lg bx-tada-hover"></span><br class="hidden-xs"> Menu</a>
             </li>
@@ -114,8 +114,6 @@
   <!-- Libs -->
   <script src="lib/jquery-2.1.4.min.js"></script>
   <script src="lib/bootstrap.min.js"></script>
-  <!-- <script src="js/ajax-utils.js"></script> -->
-  <!-- <script src="js/script.js"></script> -->
   <script src="lib/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
 
@@ -126,10 +124,13 @@
   <script src="src/common/common.module.js"></script>
   <script src="src/common/loading/loading.component.js"></script>
   <script src="src/common/loading/loading.interceptor.js"></script>
+  <script src="src/common/menu.service.js"></script>
 
   <!-- Public Module -->
   <script src="src/public/public.module.js"></script>
   <script src="src/public/public.routes.js"></script>
+  <script src="src/public/menu/menu.controller.js"></script>
+  <script src="src/public/menu-category/menu-category.component.js"></script>
 
   <!-- ADMIN SITE -->
 
