@@ -113,6 +113,31 @@ h3.menu-item-title {
 }
 /* END SINGLE CATEGORY PAGE */
 
+/* ABOUT PAGE */
+#about-view {
+  color: #f2f2f2;
+  min-height: 300px;
+}
+#about-view p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f2f2f2;
+}
+/* END ABOUT PAGE */
+
+/* AWARDS PAGE */
+#awards-view {
+  color: #f2f2f2;
+  min-height: 300px;
+}
+#awards-view p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f2f2f2;
+}
+/* END AWARDS PAGE */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
